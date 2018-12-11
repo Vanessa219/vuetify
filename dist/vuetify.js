@@ -3232,11 +3232,17 @@ process.umask = function() { return 0; };
 
 module.exports = {
 	"name": "vuetify",
-	"version": "1.2.8",
-	"author": {
-		"name": "John Leider",
-		"email": "john@vuetifyjs.com"
-	},
+	"version": "1.2.9",
+	"author": [
+		{
+			"name": "John Leider",
+			"email": "john@vuetifyjs.com"
+		},
+		{
+			"name": "Vanessa",
+			"email": "v@b3log.org"
+		}
+	],
 	"license": "MIT",
 	"homepage": "http://vuetifyjs.com",
 	"main": "dist/vuetify.js",
@@ -9756,22 +9762,20 @@ __webpack_require__(108);
           event.preventDefault();
           break;
         case 'l':
-          this.insert('* ', '');
+          if (event.shiftKey) {
+            this.insert('1. ', '');
+          } else {
+            this.insert('* ', '');
+          }
           event.preventDefault();
           break;
         case 'd':
           this.$set(this, 'hasPreview', !this.hasPreview);
           event.preventDefault();
           break;
-        case 'A':
+        case 'a':
           if (event.shiftKey) {
             this.$set(this, 'isFullScreen', !this.isFullScreen);
-            event.preventDefault();
-          }
-          break;
-        case 'L':
-          if (event.shiftKey) {
-            this.insert('1. ', '');
             event.preventDefault();
           }
           break;

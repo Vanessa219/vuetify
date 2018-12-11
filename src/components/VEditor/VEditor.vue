@@ -206,22 +206,20 @@
             event.preventDefault()
             break
           case 'l':
-            this.insert('* ', '')
+            if (event.shiftKey) {
+              this.insert('1. ', '')
+            } else {
+              this.insert('* ', '')
+            }
             event.preventDefault()
             break
           case 'd':
             this.$set(this, 'hasPreview', !this.hasPreview)
             event.preventDefault()
             break
-          case 'A':
+          case 'a':
             if (event.shiftKey) {
               this.$set(this, 'isFullScreen', !this.isFullScreen)
-              event.preventDefault()
-            }
-            break
-          case 'L':
-            if (event.shiftKey) {
-              this.insert('1. ', '')
               event.preventDefault()
             }
             break
