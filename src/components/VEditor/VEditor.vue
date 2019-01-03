@@ -173,6 +173,7 @@
     },
     watch: {
       value: function (newValue) {
+        this._debounceChange()
         this.$set(this, 'textareaValue', newValue)
       }
     },

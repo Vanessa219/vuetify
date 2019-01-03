@@ -9729,6 +9729,7 @@ __webpack_require__(108);
 
   watch: {
     value: function value(newValue) {
+      this._debounceChange();
       this.$set(this, 'textareaValue', newValue);
     }
   },
