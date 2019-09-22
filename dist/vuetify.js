@@ -3232,7 +3232,7 @@ process.umask = function() { return 0; };
 
 module.exports = {
 	"name": "vuetify",
-	"version": "1.2.10",
+	"version": "1.2.12",
 	"author": [
 		{
 			"name": "John Leider",

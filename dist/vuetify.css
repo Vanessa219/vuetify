@@ -153,22 +153,6 @@ blockquote {
   font-size: 18px;
   font-weight: 300;
 }
-code,
-kbd {
-  display: inline-block;
-  border-radius: 3px;
-  white-space: pre-wrap;
-  font-size: 85%;
-  font-weight: 900;
-}
-code {
-  background-color: #f5f5f5;
-  color: #bd4147;
-}
-kbd {
-  background: #424242;
-  color: #fff;
-}
 html,
 body {
   height: 100%;
